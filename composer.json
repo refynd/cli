@@ -1,5 +1,6 @@
 {
     "name": "refynd/cli",
+    "version": "1.0.1",
     "description": "Command line interface for the Refynd PHP framework",
     "keywords": ["refynd", "cli", "framework", "php", "tool", "generator"],
     "homepage": "https://github.com/refynd/cli",
