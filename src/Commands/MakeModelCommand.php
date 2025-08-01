@@ -14,14 +14,12 @@ use Refynd\Cli\Generators\ModelGenerator;
  */
 class MakeModelCommand extends Command
 {
-    protected static $defaultName = 'make:model';
-    protected static $defaultDescription = 'Create a new model class';
-
     protected function configure(): void
     {
         $this
-            ->addArgument('name', InputArgument::REQUIRED, 'The name of the model')
+            ->setName('make:model')
             ->setDescription('Create a new model class')
+            ->addArgument('name', InputArgument::REQUIRED, 'The name of the model')
             ->setHelp('This command creates a new model class in the app/Models directory.');
     }
 

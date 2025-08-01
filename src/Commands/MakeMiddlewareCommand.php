@@ -14,14 +14,12 @@ use Refynd\Cli\Generators\MiddlewareGenerator;
  */
 class MakeMiddlewareCommand extends Command
 {
-    protected static $defaultName = 'make:middleware';
-    protected static $defaultDescription = 'Create a new middleware class';
-
     protected function configure(): void
     {
         $this
-            ->addArgument('name', InputArgument::REQUIRED, 'The name of the middleware')
+            ->setName('make:middleware')
             ->setDescription('Create a new middleware class')
+            ->addArgument('name', InputArgument::REQUIRED, 'The name of the middleware')
             ->setHelp('This command creates a new middleware class in the app/Http/Middleware directory.');
     }
 

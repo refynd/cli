@@ -15,16 +15,14 @@ use Refynd\Cli\Generators\ControllerGenerator;
  */
 class MakeControllerCommand extends Command
 {
-    protected static $defaultName = 'make:controller';
-    protected static $defaultDescription = 'Create a new controller class';
-
     protected function configure(): void
     {
         $this
+            ->setName('make:controller')
+            ->setDescription('Create a new controller class')
             ->addArgument('name', InputArgument::REQUIRED, 'The name of the controller')
             ->addOption('resource', 'r', InputOption::VALUE_NONE, 'Generate a resource controller')
             ->addOption('api', null, InputOption::VALUE_NONE, 'Generate an API controller')
-            ->setDescription('Create a new controller class')
             ->setHelp('This command creates a new controller class in the app/Http/Controllers directory.');
     }
 

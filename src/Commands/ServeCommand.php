@@ -14,15 +14,13 @@ use Symfony\Component\Process\Process;
  */
 class ServeCommand extends Command
 {
-    protected static $defaultName = 'serve';
-    protected static $defaultDescription = 'Start the development server';
-
     protected function configure(): void
     {
         $this
+            ->setName('serve')
+            ->setDescription('Start the development server')
             ->addOption('host', null, InputOption::VALUE_OPTIONAL, 'The host address to serve the application on', 'localhost')
             ->addOption('port', 'p', InputOption::VALUE_OPTIONAL, 'The port to serve the application on', '8000')
-            ->setDescription('Start the development server')
             ->setHelp('This command starts the built-in PHP development server.');
     }
 

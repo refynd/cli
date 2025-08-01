@@ -14,15 +14,13 @@ use Symfony\Component\Process\Process;
  */
 class TestCommand extends Command
 {
-    protected static $defaultName = 'test';
-    protected static $defaultDescription = 'Run the application tests';
-
     protected function configure(): void
     {
         $this
+            ->setName('test')
+            ->setDescription('Run the application tests')
             ->addOption('coverage', 'c', InputOption::VALUE_NONE, 'Generate code coverage report')
             ->addOption('filter', 'f', InputOption::VALUE_OPTIONAL, 'Filter which tests to run')
-            ->setDescription('Run the application tests')
             ->setHelp('This command runs PHPUnit tests with enhanced output formatting.');
     }
 

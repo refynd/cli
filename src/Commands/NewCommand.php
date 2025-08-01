@@ -16,16 +16,14 @@ use Symfony\Component\Process\Process;
  */
 class NewCommand extends Command
 {
-    protected static $defaultName = 'new';
-    protected static $defaultDescription = 'Create a new Refynd application';
-
     protected function configure(): void
     {
         $this
+            ->setName('new')
+            ->setDescription('Create a new Refynd application')
             ->addArgument('name', InputArgument::REQUIRED, 'The name of the application')
             ->addOption('template', 't', InputOption::VALUE_OPTIONAL, 'The template to use', 'api')
             ->addOption('force', null, InputOption::VALUE_NONE, 'Overwrite existing directory')
-            ->setDescription('Create a new Refynd application')
             ->setHelp('This command creates a new Refynd application with the specified name.');
     }
 
