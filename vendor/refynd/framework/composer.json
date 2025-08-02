@@ -7,8 +7,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jade",
-            "email": "jade@refynd.dev"
+            "name": "Jade Monathrae Lewis",
+            "email": "jade@refynd.dev",
+            "role": "Founder & Creator"
         }
     ],
     "support": {
@@ -27,6 +28,7 @@
         "phpstan/phpstan": "^1.0"
     },
     "suggest": {
+        "refynd/cli": "Command line interface for project creation and code generation",
         "ext-redis": "Required for Redis cache driver",
         "ext-memcached": "Required for Memcached cache driver",
         "vlucas/phpdotenv": "Required for environment variable support"
@@ -51,6 +53,10 @@
         "check": [
             "@analyse",
             "@test"
+        ],
+        "post-install-cmd": [
+            "@php -r \"echo '\\n🚀 Refynd Framework installed successfully!\\n';\"",
+            "@php -r \"echo '💡 Tip: Install the CLI tool globally with: composer global require refynd/cli\\n\\n';\""
         ]
     },
     "extra": {

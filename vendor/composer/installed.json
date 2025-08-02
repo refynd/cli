@@ -885,17 +885,17 @@
         },
         {
             "name": "refynd/framework",
-            "version": "v1.1.0",
-            "version_normalized": "1.1.0.0",
+            "version": "v1.2.0",
+            "version_normalized": "1.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/refynd/framework.git",
-                "reference": "09508fe7e51ad241323340f6ba0c48d47cfce860"
+                "reference": "46c278f33d11d4d5b80187c353fc3921ae4b690c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/refynd/framework/zipball/09508fe7e51ad241323340f6ba0c48d47cfce860",
-                "reference": "09508fe7e51ad241323340f6ba0c48d47cfce860",
+                "url": "https://api.github.com/repos/refynd/framework/zipball/46c278f33d11d4d5b80187c353fc3921ae4b690c",
+                "reference": "46c278f33d11d4d5b80187c353fc3921ae4b690c",
                 "shasum": ""
             },
             "require": {
@@ -912,9 +912,10 @@
             "suggest": {
                 "ext-memcached": "Required for Memcached cache driver",
                 "ext-redis": "Required for Redis cache driver",
+                "refynd/cli": "Command line interface for project creation and code generation",
                 "vlucas/phpdotenv": "Required for environment variable support"
             },
-            "time": "2025-08-01T17:19:04+00:00",
+            "time": "2025-08-02T01:15:40+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -936,8 +937,9 @@
             ],
             "authors": [
                 {
-                    "name": "Jade",
-                    "email": "jade@refynd.dev"
+                    "name": "Jade Monathrae Lewis",
+                    "email": "jade@refynd.dev",
+                    "role": "Founder & Creator"
                 }
             ],
             "description": "A powerful, elegant, and expressive PHP framework built for crafting exceptional applications",

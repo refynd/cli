@@ -143,9 +143,9 @@
             'dev_requirement' => false,
         ),
         'refynd/framework' => array(
-            'pretty_version' => 'v1.1.0',
-            'version' => '1.1.0.0',
-            'reference' => '09508fe7e51ad241323340f6ba0c48d47cfce860',
+            'pretty_version' => 'v1.2.0',
+            'version' => '1.2.0.0',
+            'reference' => '46c278f33d11d4d5b80187c353fc3921ae4b690c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../refynd/framework',
             'aliases' => array(),
