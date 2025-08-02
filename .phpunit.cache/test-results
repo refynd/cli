@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"Tests\\Unit\\ApplicationTest::test_application_has_required_commands":0.007,"Tests\\Unit\\ApplicationTest::test_application_has_correct_name_and_version":0}}
+{"version":1,"defects":[],"times":{"Tests\\Unit\\ApplicationTest::test_application_has_required_commands":0.009,"Tests\\Unit\\ApplicationTest::test_application_has_correct_name_and_version":0}}
