@@ -126,14 +126,12 @@ class NewCommand extends Command
         }
 
         // Set proper permissions
-        if (is_dir($projectPath . '/storage')) {
-            chmod($projectPath . '/storage', 0755);
-            if (is_dir($projectPath . '/storage/logs')) {
-                chmod($projectPath . '/storage/logs', 0755);
-            }
-            if (is_dir($projectPath . '/storage/cache')) {
-                chmod($projectPath . '/storage/cache', 0755);
-            }
+        chmod($projectPath . '/storage', 0755);
+        if (is_dir($projectPath . '/storage/logs')) {
+            chmod($projectPath . '/storage/logs', 0755);
+        }
+        if (is_dir($projectPath . '/storage/cache')) {
+            chmod($projectPath . '/storage/cache', 0755);
         }
 
         $io->text("✅ Permissions set");
@@ -161,7 +159,7 @@ class NewCommand extends Command
     private function replacePlaceholders(string $projectPath, string $name): void
     {
         $replacements = [
-            '{{APP_NAME}}' => $this->toValidPackageName($name),
+            '{{APP_NAME}}' => $name,
             '{{APP_NAMESPACE}}' => $this->toPascalCase($name),
         ];
 
@@ -181,21 +179,5 @@ class NewCommand extends Command
     private function toPascalCase(string $string): string
     {
         return str_replace(' ', '', ucwords(str_replace(['-', '_'], ' ', $string)));
-    }
-
-    private function toValidPackageName(string $name): string
-    {
-        // Convert to lowercase and replace invalid characters with hyphens
-        $packageName = strtolower($name);
-        $packageName = preg_replace('/[^a-z0-9\-_]/', '-', $packageName);
-        $packageName = preg_replace('/[-_]+/', '-', $packageName); // Remove multiple hyphens/underscores
-        $packageName = trim($packageName, '-_'); // Remove leading/trailing hyphens/underscores
-        
-        // Ensure it has a vendor prefix for composer
-        if (strpos($packageName, '/') === false) {
-            $packageName = 'my-org/' . $packageName;
-        }
-        
-        return $packageName;
     }
 }

@@ -19,7 +19,7 @@ class Application extends ConsoleApplication
 {
     public function __construct()
     {
-        parent::__construct('Refynd CLI', '1.0.0');
+        parent::__construct('Refynd CLI', '2.0.0');
 
         $this->addCommands([
             new NewCommand(),

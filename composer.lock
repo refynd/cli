@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "baa0f239cb25958ff132042f102ef741",
+    "content-hash": "cd017c0624da8420d2d2aeeb8017f3c6",
     "packages": [
         {
             "name": "psr/container",
@@ -114,16 +114,16 @@
         },
         {
             "name": "refynd/framework",
-            "version": "v1.2.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/refynd/framework.git",
-                "reference": "46c278f33d11d4d5b80187c353fc3921ae4b690c"
+                "reference": "32d49029d643fb37c6e6634262c83d14972c1ab7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/refynd/framework/zipball/46c278f33d11d4d5b80187c353fc3921ae4b690c",
-                "reference": "46c278f33d11d4d5b80187c353fc3921ae4b690c",
+                "url": "https://api.github.com/repos/refynd/framework/zipball/32d49029d643fb37c6e6634262c83d14972c1ab7",
+                "reference": "32d49029d643fb37c6e6634262c83d14972c1ab7",
                 "shasum": ""
             },
             "require": {
@@ -185,7 +185,7 @@
                 "issues": "https://github.com/refynd/framework/issues",
                 "source": "https://github.com/refynd/framework"
             },
-            "time": "2025-08-02T01:15:40+00:00"
+            "time": "2025-08-02T03:50:11+00:00"
         },
         {
             "name": "symfony/console",
@@ -3001,7 +3001,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.4"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
