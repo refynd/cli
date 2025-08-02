@@ -59,7 +59,7 @@ refynd test --filter=UserTest   # Filter tests
 
 - PHP 8.2 or higher
 - Composer
-- Refynd Framework ^1.1
+- Refynd Framework ^2.0
 
 ## Contributing
 
